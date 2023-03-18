@@ -38,3 +38,4 @@ endif()
 
 include_directories(src/main/include)
 add_subdirectory(src/main/cpp)
+add_subdirectory(src/main/cpp/depthai-core EXCLUDE_FROM_ALL)

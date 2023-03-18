@@ -22,14 +22,17 @@ public class StreamServer extends Thread {
     public void run() {
         running = true;
 
+        DatagramPacket packet;
+
         while (running) {
-            DatagramPacket packet = new DatagramPacket(buf, buf.length, this.address, this.port);
+            packet = new DatagramPacket(buf, buf.length, this.address, this.port);
 
             try {
                 socket.send(packet);
             } catch (IOException e) {
                 // TODO: Auto-generated catch block
                 e.printStackTrace();
+                break;
             }
         }
         socket.close();
