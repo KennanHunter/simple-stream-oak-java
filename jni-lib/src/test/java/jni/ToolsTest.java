@@ -7,8 +7,8 @@ class ToolsTest {
 
     @Test
     void testFooBar() {
-        Tools tools = new Tools();
-        assertEquals(tools.foo(), "foo");
-        assertEquals(tools.bar(), "bar");
+        SimpleStreamServer simpleStreamServer = new SimpleStreamServer();
+        assertEquals(simpleStreamServer.foo(), "foo");
+        assertEquals(simpleStreamServer.bar(), "bar");
     }
 }

@@ -1,0 +1,3 @@
+[submodule "jni-lib/src/main/cpp/depthai-core"]
+	path = jni-lib/src/main/cpp/depthai-core
+	url = git@github.com:luxonis/depthai-core.git
